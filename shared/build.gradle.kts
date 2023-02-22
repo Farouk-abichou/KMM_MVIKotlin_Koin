@@ -39,11 +39,12 @@ kotlin {
                 implementation(Deps.sqlDelightCoroutinesExtensions)
                 implementation(Deps.kotlinDateTime)
 
-                implementation (Deps.mvikotlin)
-                implementation (Deps.mvikotlinCoroutines)
-                implementation (Deps.mvikotlinReaktive)
-                implementation (Deps.mvikotlinLogging)
-                implementation (Deps.mvikotlinMain)
+                implementation(Deps.ArkIvanov.Decompose.decompose)
+                implementation(Deps.ArkIvanov.MVIKotlin.mvikotlin)
+                implementation(Deps.ArkIvanov.MVIKotlin.mvikotlinExtensionsReaktive)
+                implementation(Deps.Badoo.Reaktive.reaktive)
+
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
                 with(Deps.Koin) {
                     api(core)
@@ -99,6 +100,9 @@ android {
         targetSdk = 33
     }
 }
-dependencies {
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+sqldelight{
+    database("TranslateDatabase"){
+        packageName = "com.example.translator_kmm.database"
+        sourceFolders = listOf("sqldelight")
+    }
 }

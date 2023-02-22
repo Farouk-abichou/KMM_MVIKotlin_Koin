@@ -1,0 +1,19 @@
+CREATE TABLE todoEntity(
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    text TEXT NOT NULL,
+    isDone TEXT NOT NULL
+);
+
+getTodos:
+SELECT *
+FROM todoEntity
+ORDER BY text DESC;
+
+insertTodo:
+INSERT OR REPLACE
+INTO todoEntity(
+    id,
+    text,
+    isDone
+)
+VALUES(?, ?,?);
