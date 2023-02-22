@@ -12,9 +12,10 @@ object Deps {
     }
 
     //MVIKotlin
-    const val mvikotlinCoroutines ="com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:3.1.0"
-    const val mvikotlin ="com.arkivanov.mvikotlin:mvikotlin:3.1.0"
-    const val mvikotlinMain ="com.arkivanov.mvikotlin:mvikotlin-main:3.1.0"
+    private const val mvikotlinVersion = "3.1.0"
+    const val mvikotlinCoroutines ="com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:$mvikotlinVersion"
+    const val mvikotlin ="com.arkivanov.mvikotlin:mvikotlin:$mvikotlinVersion"
+    const val mvikotlinMain ="com.arkivanov.mvikotlin:mvikotlin-main:$mvikotlinVersion"
 
     // COMPOSE
     private const val activityComposeVersion = "1.6.1"
