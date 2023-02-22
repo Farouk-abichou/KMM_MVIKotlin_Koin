@@ -1,4 +1,4 @@
-package com.example.kmm_mvikotlin_koin.todo.data.todos
+package com.example.kmm_mvikotlin_koin.todo.data
 
 import com.example.kmm_mvikotlin_koin.todo.domain.todos.TodoItem
 import database.TodoEntity
