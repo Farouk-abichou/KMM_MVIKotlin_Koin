@@ -5,14 +5,16 @@ object Deps {
     object Versions {
         const val koin = "3.3.2"
     }
-
     object Koin {
         const val core = "io.insert-koin:koin-core:${Versions.koin}"
         const val test = "io.insert-koin:koin-test:${Versions.koin}"
         const val android = "io.insert-koin:koin-android:${Versions.koin}"
     }
 
-
+    //MVIKotlin
+    const val mvikotlinCoroutines ="com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:3.1.0"
+    const val mvikotlin ="com.arkivanov.mvikotlin:mvikotlin:3.1.0"
+    const val mvikotlinMain ="com.arkivanov.mvikotlin:mvikotlin-main:3.1.0"
 
     // COMPOSE
     private const val activityComposeVersion = "1.6.1"

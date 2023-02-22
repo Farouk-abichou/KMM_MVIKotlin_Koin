@@ -39,6 +39,10 @@ kotlin {
                 implementation(Deps.sqlDelightCoroutinesExtensions)
                 implementation(Deps.kotlinDateTime)
 
+                implementation (Deps.mvikotlin)
+                implementation (Deps.mvikotlinCoroutines)
+                implementation (Deps.mvikotlinMain)
+
                 with(Deps.Koin) {
                     api(core)
                     api(test)
