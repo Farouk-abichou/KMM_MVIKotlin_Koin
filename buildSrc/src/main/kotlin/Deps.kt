@@ -1,6 +1,5 @@
 object Deps {
 
-
     // KOIN
     object Versions {
         const val koin = "3.3.2"
@@ -39,14 +38,6 @@ object Deps {
     private const val dateTimeVersion = "0.4.0"
     const val kotlinDateTime = "org.jetbrains.kotlinx:kotlinx-datetime:$dateTimeVersion"
 
-//    // HILT
-//    private const val hiltVersion = "2.42"
-//    private const val hiltCompilerVersion = "1.0.0"
-//    const val hiltAndroid = "com.google.dagger:hilt-android:$hiltVersion"
-//    const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:$hiltVersion"
-//    const val hiltCompiler = "androidx.hilt:hilt-compiler:$hiltCompilerVersion"
-//    const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:$hiltCompilerVersion"
-
     // KTOR
     private const val ktorVersion = "2.1.3"
     const val ktorCore = "io.ktor:ktor-client-core:$ktorVersion"
@@ -65,7 +56,6 @@ object Deps {
     private const val sqlDelightGradleVersion = "1.5.3"
     const val sqlDelightGradlePlugin = "com.squareup.sqldelight:gradle-plugin:$sqlDelightGradleVersion"
 
-//    const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
 
     // SQLDELIGHT
     private const val sqlDelightVersion = "1.5.4"
@@ -82,7 +72,6 @@ object Deps {
     const val turbine = "app.cash.turbine:turbine:$turbineVersion"
 
     private const val jUnitVersion = "4.13.2"
-//    const val jUnit = "junit:junit:$jUnitVersion"
 
     private const val testRunnerVersion = "1.5.1"
     const val testRunner = "androidx.test:runner:$testRunnerVersion"
@@ -90,5 +79,4 @@ object Deps {
     const val composeTesting = "androidx.compose.ui:ui-test-junit4:$composeVersion"
     const val composeTestManifest = "androidx.compose.ui:ui-test-manifest:$composeVersion"
 
-//    const val hiltTesting = "com.google.dagger:hilt-android-testing:$hiltVersion"
 }
