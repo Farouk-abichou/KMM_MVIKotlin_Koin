@@ -41,6 +41,8 @@ kotlin {
 
                 implementation (Deps.mvikotlin)
                 implementation (Deps.mvikotlinCoroutines)
+                implementation (Deps.mvikotlinReaktive)
+                implementation (Deps.mvikotlinLogging)
                 implementation (Deps.mvikotlinMain)
 
                 with(Deps.Koin) {
@@ -96,4 +98,7 @@ android {
         minSdk = 24
         targetSdk = 33
     }
+}
+dependencies {
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 }

@@ -14,6 +14,8 @@ object Deps {
     private const val mvikotlinVersion = "3.1.0"
     const val mvikotlinCoroutines ="com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:$mvikotlinVersion"
     const val mvikotlin ="com.arkivanov.mvikotlin:mvikotlin:$mvikotlinVersion"
+    const val mvikotlinReaktive ="com.arkivanov.mvikotlin:mvikotlin-extensions-reaktive:$mvikotlinVersion"
+    const val mvikotlinLogging ="com.arkivanov.mvikotlin:mvikotlin-logging:$mvikotlinVersion"
     const val mvikotlinMain ="com.arkivanov.mvikotlin:mvikotlin-main:$mvikotlinVersion"
 
     // COMPOSE

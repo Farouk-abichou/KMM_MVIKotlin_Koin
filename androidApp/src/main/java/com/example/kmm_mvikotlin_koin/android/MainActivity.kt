@@ -1,8 +1,11 @@
 package com.example.kmm_mvikotlin_koin.android
 
+import CalculatorStore
+import CalculatorStoreFactory
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -19,7 +22,16 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    GreetingView(Greeting().greet())
+                    Row() {
+                        Button(text = "+"){
+                            CalculatorStore.Intent.Increment
+                        }
+                        Number(text = "${CalculatorStore.State()}")
+                        Button(text = "-"){
+                            CalculatorStore.Intent.Decrement
+
+                        }
+                    }
                 }
             }
         }
@@ -27,14 +39,19 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun GreetingView(text: String) {
+fun Button(
+    text: String,
+    onClick:() -> Unit
+) {
+    Button(text = text){
+        onClick
+    }
+}
+
+@Composable
+fun Number(text: String) {
     Text(text = text)
 }
 
-@Preview
-@Composable
-fun DefaultPreview() {
-    MyApplicationTheme {
-        GreetingView("Hello, Android!")
-    }
-}
+
+
